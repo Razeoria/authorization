@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и авторизация</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="forms-section">
+        
+        <form id="register" class="form-block">
+            <fieldset>
+            <legend>Регистрация</legend>
+            <div class="block-inputs">
+                <div class="item-input">
+                    <label for="userNameForm">Имя</label>
+                    <input type="text" name="userName" id="userNameForm" required>
+                </div>
+
+                <div class="item-input">
+                    <label for="phoneUserForm">Телефон</label>
+                    <input type="tel" name="phoneUser" id="phoneUserForm" required>
+                </div>
+
+                <div class="item-input">
+                    <label for="userEmailForm">Email</label>
+                    <input type="email" name="userEmail" id="userEmailForm" required>
+                </div>
+
+                <div class="item-input">
+                    <label for="userPasswordForm">Пароль</label>
+                    <input type="password" name="userPassword" id="userPasswordForm" required> 
+                </div>
+            </div>
+
+            <div class="block-submit">
+                <input type="submit" value="Зарегистрироваться">
+            </div>
+        </fieldset>
+        </form>
+
+        <form id="login" class="form-block">
+        <fieldset>
+            <legend>Авторизация</legend>
+            <div class="block-inputs">
+
+                <div class="item-input">
+                    <label for="userEmailFormLogin">Email</label>
+                    <input type="email" name="userEmailLogin" id="userEmailFormLogin" required>
+                </div>
+
+                <div class="item-input">
+                    <label for="userPasswordFormLogin">Пароль</label>
+                    <input type="password" name="userPasswordLogin" id="userPasswordFormLogin" required>
+                </div>
+            </div>
+
+            <div class="block-submit">
+                <input type="submit" value="Войти">
+            </div>
+        </fieldset>
+        </form>
+
+        <div class="status-info">
+            <p class="fail"></p>
+        </div>
+    </section>
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
